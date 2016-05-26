@@ -44,7 +44,7 @@ class AnsibleCore(object):
                 name="Scan RHEL",
                 hosts=host_list,
                 gather_facts='no',
-                tasks=[dict(action=dict(module='scan-rhel', args=''), register='')]
+                tasks=[dict(action=dict(module='scan_rhel2', args=''), register='')]
             )
         elif scan_type == 'jboss':
             # create play with tasks
